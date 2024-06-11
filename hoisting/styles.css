@@ -1,0 +1,38 @@
+body{
+text-align: center;
+}
+.container{
+    position: relative;
+    display: flex;
+    text-align: center;
+   align-items: center;
+    justify-content: center;
+}
+.story{
+    background-color: #999;
+    max-width: 20rem;
+    text-align: start;
+    padding: 2rem;
+    max-height: 40vh;
+    overflow-y: auto;
+}
+.btn{
+    margin-top: 2rem;
+    padding: 0.2rem 1rem;
+    outline: none;
+    border: none;
+    background: #494869;
+    color: #fff;
+    border-radius: 5px;
+}
+.scroll{
+    position: absolute;
+    bottom: -1rem;
+    align-items: center;
+    background: #ddd;
+    color: #222;
+    display: none;
+}
+.less{
+    visibility: hidden;
+}

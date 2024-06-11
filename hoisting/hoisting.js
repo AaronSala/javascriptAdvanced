@@ -1,18 +1,31 @@
+const button = document.querySelectorAll(".btn");
+const btnScroll = document.querySelector(".scroll");
+const container = document.querySelector(".story");
 
-// //fucntion hoisting
+container.addEventListener('scroll' ,() =>{
+  if (container.scrollTop > 220) {
+    btnScroll.style.display = "block";
+  } else {
+    btnScroll.style.display = "none";
+  }
+})
 
 
-// //console.log(a); //ref error can not access a before initialization andalso with const, var would give undefined
-//  let add=(a, b)=> {
-// //console.log(c);
-//   //  var c =23
-//     return a + b
-    
-//  }
-// console.log(add(4, 9));
-// //let a  = 50
-console.log("I’m learning about");
-setTimeout(() => {
-  console.log("Event Loop");
-}, 2000);
-console.log("the");
+btnScroll.addEventListener("click", () => {
+  container.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+button[1].addEventListener("click", () => {
+  container.style.maxHeight = "80vh";
+  button[2].style.visibility = "visible";
+  button[1].style.visibility = "hidden";
+  container.style.scrollBehavior = "smooth";
+});
+button[2].addEventListener("click", () => {
+  container.style.maxHeight = "40vh";
+  button[2].style.visibility = "hidden";
+  button[1].style.visibility = "visible";
+});
