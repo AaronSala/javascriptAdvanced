@@ -1,13 +1,11 @@
-//function declaration 
-//function defination
-(function add(x) {
-    return (function (y) {
-        console.log(x)
-    })(3)
-})(7)
-
-{
-    let a = 50
-    console.log(a);
+const person = {
+    name: "Aaron",
+    ae: 30,
+    proffesion:"programmer"
 }
-console.log(a);
+console.table(person)
+
+let arr = [1, 2, 2, 5, 6, 8, 6, 4]
+
+let neArr = [...new Set(arr)]
+console.log(neArr);
