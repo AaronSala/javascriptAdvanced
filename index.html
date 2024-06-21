@@ -7,59 +7,74 @@
     <script src="memory.js" defer></script>
   </head>
   <body>
+    <!-- using semantics -->
     <nav>
-        <a href="sms: +254704261080">call me</a>
-    <a href="mailto:salaaron2@gmail.com">emial me</a>
+      <a href="sms: +254704261080">call me</a>
+      <a href="mailto:salaaron2@gmail.com">emial me</a>
     </nav>
-    
-<aside>
-  <details>
-   <summary style="cursor: pointer;">Click to expand</summary> 
-  <p style="width: 16rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Laboriosam totam sapiente cumque dicta natus
-     dolorem ut tenetur temporibus possimus vero?
-  </p>
-</details>
 
- <form action="#">
-<fieldset>
-    <legend>user details</legend>
-   
-        <label for="name">name</label>
-        <input type="text">
-        <label for="password">password</label>
-        <input type="password">
-       
-        <select multiple>
+    <aside>
+      <details>
+        <summary style="cursor: pointer">Click to expand</summary>
+        <p style="width: 16rem">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          totam sapiente cumque dicta natus dolorem ut tenetur temporibus
+          possimus vero?
+        </p>
+      </details>
+
+      <form action="#">
+        <fieldset>
+          <legend>user details</legend>
+
+          <label for="name">name</label>
+          <input type="text" />
+          <label for="password">password</label>
+          <input type="password" minlength="6" maxlength="10" />
+
+          <select multiple>
             <option value="java">Java</option>
             <option value="javascript">Javascript</option>
             <option value="typescript">typescript</option>
             <option value="c++">c++</option>
-        </select>
+          </select>
+        </fieldset>
+      </form>
 
-</fieldset>
-
-  </form>
-
-
-  <select name="Fuits" id="">
-    <optgroup label="Fruits">
-       <option value="">Mangoes</option>
-       <option value="">Oranges</option>
-       <option value="">Apples</option>
-    </optgroup>
-    <optgroup label="Vegitables">
-      <option value="">Spinanch</option>
-       <option value="">cabbages</option>
-        <option value="">kales</option>
-
-    </optgroup>
-  </select>
-
-  
-</aside>
+      <select name="Fuits" id="">
+        <optgroup label="Fruits">
+          <option value="">Mangoes</option>
+          <option value="">Oranges</option>
+          <option value="">Apples</option>
+        </optgroup>
+        <optgroup label="Vegitables">
+          <option value="">Spinanch</option>
+          <option value="">cabbages</option>
+          <option value="">kales</option>
+        </optgroup>
+      </select>
+    </aside>
     <section>
-        date is 17 <sup>th</sup> 
+      <video
+        controls
+        poster="./images/images/th (2).jpeg"
+        width="500"
+        height="530"
+      >
+        <source
+          src="https://www.youtube.com/watch?v=Iq7LCnaqjr0&list=RDxjktzNv2jVU&index=9"
+          type="video/mp4"
+        />
+      </video>
+      
+      
     </section>
+
+    <!-- download links -->
+    <!-- <a href="document.pdf" download="document.pdf">Download pdf</a> -->
+ <div class="" contenteditable="true">this content can be editable</div>
+
+<p title="World Health Orgernization">WHO</p>
+<q>who deserves this oportunity</q>
   </body>
 </html>
