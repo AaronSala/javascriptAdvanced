@@ -1,0 +1,29 @@
+.container{
+background: #aaa;
+
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.centered{
+    display: grid;
+   gap:2rem;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+   
+}
+.box{
+    display: flex;
+   width: 10rem;
+   height: 10rem;
+   background-color: #fff;
+   align-items: center;
+   justify-content: center;
+  
+}
