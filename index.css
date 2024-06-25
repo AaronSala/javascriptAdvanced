@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .container {
     background: #aaa;
     padding: 2rem;
@@ -5,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
 }
 
 .centered {
@@ -14,13 +17,13 @@
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 2rem;
     width: 100%;
-    /* Ensures the grid takes full width of the container */
+  
 }
 
 .box {
     display: flex;
     width: 100%;
-    /* Full width of the column */
+  
     height: 10rem;
     background-color: #fff;
     align-items: center;
