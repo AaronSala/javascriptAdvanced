@@ -1,16 +1,33 @@
-//how js andle operations that take time to complete
-
-console.log('this is the first line of ccode in this js file')
-
-function withTimeout() {
-    console.log('executed with time out os 3s')
+function add(num2) {
+   
+   // console.log(num1+num2)
+    return function for2(num1) {
+        
+        console.log(num1+num2);
+    }
 }
-setTimeout(withTimeout, 3000)
+let fullfunc = add(23)
+fullfunc(10)
 
-console.log('this is the last line of code');
+add(12)(43)
 
-// this event loop aligns the order of events in the queue in the order to execute
-//the first console is fed to the staack executed the poped out the the function is fed to the stack
-//the timer will run for 3secs then the callback is pushed to the queue
-//the event loop checks if the stack cleared to handle any messege in the event wueue
-// tne last console is then added to the stack executed then poped
+
+//call bind and apply
+//call
+const o1 = {
+    name: "ravi",
+    getName: function () {
+        console.log('hallo'+' '+ this.name)
+    }
+}
+
+const o2 = {
+    name:"mutuli"
+}
+o1.getName.call(o2)
+
+//apply
+const nums = [1, 2, 4, 6, 7, 45]
+
+const max = Math.max.apply( nums)
+console.log(max)
